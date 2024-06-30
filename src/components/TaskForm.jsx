@@ -1,5 +1,6 @@
 import React from 'react'
 import "./TaskForm.css"
+import Tag from './Tag'
 function TaskForm() {
   return (
     
@@ -12,20 +13,19 @@ function TaskForm() {
             />
             <div className='task_form_bottom_line'>
                 <div>
-                    
-                <button className='tag'>HTML</button>
-                <button className='tag'>CSS</button>
-                <button className='tag'>Javascript</button>
-                <button className='tag'>React</button>
-                </div>
+                    <Tag tagName="HTML"/>
+                    <Tag  tagName="CSS"/>
+                    <Tag tagName="JS" />
+                    <Tag tagName="React"/> 
+                  </div>
                
                 <div>
                 <select className='task_status' name="" id="">
                     <option value="todo">Todo</option>
                     <option value="doing">Doing</option>
                     <option value="done">Done</option>
-                    <button type='submit' className='task_submit'>+Add Task</button>
                 </select>
+                    <button type='submit' className='task_submit'>+Add Task</button>
                 </div>
                  
             </div>
