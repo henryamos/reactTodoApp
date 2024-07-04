@@ -1,13 +1,21 @@
 import React from 'react'
 import "./Tag.css"
-function Tag({tagName}) {
+function Tag({tagName,selectTag,selected}) {
+  const tagStyle={
+    HTML:{ backgroundColor:"#fda821"},
+    CSS:{ backgroundColor:"#15d4c8"},
+    JS:{ backgroundColor:"#ffd12c"},
+    React:{ backgroundColor:"#4cdafc"},
+    defualt:{ backgroundColor:"#f9f9f9"}
+  }
   return (
     <>
-    <button className='tag'>{tagName}</button>
-    {/* <button className='tag'>HTML</button>
-     <button className='tag'>CSS</button>
-     <button className='tag'>Javascript</button>
-     <button className='tag'>React</button> */}
+    <button  
+    type="button"
+    className="tag"
+    style={selected ? tagStyle[tagName] : tagStyle.default}
+    onClick={()=> selectTag(tagName)}>{tagName}</button>
+  
     </>          
   )
 }

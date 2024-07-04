@@ -11,14 +11,18 @@
  font-size:20px;
  font-weight:500;
  background:#f9f9f9;
- color:#0000;
- border:1px solid #dfe3e6;
+ color:#6457f9;
+ border:1px solid #6457f9;
  padding:8px 12px;
  margin-bottom:15px;  
  width:100%;
 }
 .task_input::placeholder{
-    color:#686868
+    color:#6457f9;
+    opacity:50%;
+}
+.task_input:focus{
+outline:none;
 }
 .task_form_bottom_line{
     display:flex; 

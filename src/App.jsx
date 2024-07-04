@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div className='app'>
-        <TaskForm/>
+        <TaskForm se/>
         <main className='app_main'>
           <TaskColumn icon={todoImg} heading="To  do"/>
           <TaskColumn icon={doingImg} heading="Doing"/>
