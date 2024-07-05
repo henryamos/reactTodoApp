@@ -6,7 +6,7 @@ function Tag({tagName,selectTag,selected}) {
     CSS:{ backgroundColor:"#15d4c8"},
     JS:{ backgroundColor:"#ffd12c"},
     React:{ backgroundColor:"#4cdafc"},
-    defualt:{ backgroundColor:"#f9f9f9"}
+    default:{ backgroundColor:"#f9f9f9"}
   }
   return (
     <>
